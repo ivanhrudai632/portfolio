@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(25,12,41);
+}
+.slider {
+    position: relative;
+    width: 41.8%;
+    overflow: hidden;
+}
+.images {
+    display: flex;
+    width: 100%;
+}
+.images img {
+    height: 400px;
+    width: 80%;
+    transition: all 0.15s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {background: #fff;}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -99.4%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -198.8%;
+}
+#img4:checked ~ .m4 {
+    margin-left: 0;
+}
+#img5:checked ~ .m5 {
+    margin-left: -300%;
+}
+#img6:checked ~ .m6 {
+    margin-left: -300%;
+}
